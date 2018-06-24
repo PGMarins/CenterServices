@@ -2,8 +2,8 @@
 <html lang="pt-br">
 <head>
 <?php
-session_start();
-if(isset($_SESSION['usuario'])) header("location: index.php");
+session_start();//carrega as sessoes de usuarios
+if(isset($_SESSION['usuario'])) header("location: index.php");//caso o usuario logado tente ir a tela de login ele sera redirecionado a tela inicial novamente.
 ?>
   <title>Login</title>
   <meta charset="utf-8">
@@ -17,17 +17,32 @@ if(isset($_SESSION['usuario'])) header("location: index.php");
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 </style>
+<?php
+if(isset($_GET['msg'])) $modal = $_GET['msg'];//verifica se existe alguma menssagem no login
+else $modal = 0;
+if($modal == 1){//essa função chama o modal caso o usuario nao esteja cadastrado.
+$pagina = <<<EOPAGE
+<script language="javascript">
+	window.onload = function(){// carrega o modal ao carregar a pagina 
+		$('.bd-example-modal-sm').modal('show');// exibe o modal 
+		setTimeout(function(){//conta tempo de 3 segundo para fechar o modal
+			$('.bd-example-modal-sm').modal('hide');}, 3000);
+	}
+</script>
+EOPAGE;
+echo $pagina;
+}
+?>
 <body class="fundo">
 <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm">
     <div class="modal-content text-light bg-danger">
 	<div class="modal-body text-center">
-      Usuario Nao Encontrado
+      Usuario ou senha incorreto
 	  </div>
     </div>
   </div>
 </div>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
 <div class="container">
 	<div class="row">
 		<div class="col-12 col-md-9 col-lg-6 offset-0">

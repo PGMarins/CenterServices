@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<?php session_start();
-if(isset($_GET['sair'])) $sair = $_GET['sair'];
-else $sair=0;
+<?php session_start();//carrega as sessoes
+if(isset($_GET['sair'])) $sair = $_GET['sair'];//verifica se existe algo no metodo get sair, se existir a variavel recebe o valor indicado
+else $sair=0;//caso nao exista a variavel sair recebe zero
 
-if($sair==1){
+if($sair==1){//se sair for igual a 1 destroi a sessao apagando os dados da mesma e redireciona para pagina de inicial
 	session_destroy();
 	header("location:index.php");
 }
@@ -59,20 +59,22 @@ if($sair==1){
 		</div>
 	</form>
 	<?php
-		if(isset($_SESSION['usuario'])){
+		if(isset($_SESSION['usuario'])){// verifica se existe usuario conectado, caso exista ela muda o botao de login para o nome do usuario
 			echo "<ul class='navbar-nav'><li class='nav-item dropdown'>";
 				echo "<button class='button_busca nav-link dropdown-toggle' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' type='button' onclick='location.href=login.php'><span class='text-success'>
 					<i class='fa fa-fw fa-circle'></i>
-					</span><i>".$_SESSION['usuario']."</i></button>";
+					</span><i>".$_SESSION['usuario']."</i></button>";//exibe o nome do usuario logado
 					echo "<div class='dropdown-menu bg-info' aria-labelledby='navbarDropdown'>";
 					echo "<a class='dropdown-item' href='?sair=1'>Sair</a>";
 					echo"</div>";
 			 echo "</li></ul>";
 		}
 		else{
+			//EOPAGE pega todo o conteudo html dentro dele e  arquiva em uma variavel.
 $pagina=<<<EOPAGE
 <button class="button_busca" type="button" onclick="location.href='login.php'">Login</button>
 EOPAGE;
+
 echo $pagina;
 		}
 	?>
