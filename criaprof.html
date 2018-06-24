@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Cradastro de Profissionais</title>
+  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="iconic/font/css/open-iconic-bootstrap.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body class="fundo">
+<div class="container">
+	<div class="row">
+		<div class="col-12 col-md-9 col-lg-6 offset-md-7 offset-lg-7">
+			<div class="card" style="margin-top: 2rem;">
+				<div class="card-header text-center"><h4>CRIAR UMA CONTA</h4></div>
+				<center><span class="oi oi-people"></span></center>
+				<div class="card-body">
+					<form method="post" action="cadastro.php">
+						<div class="form-group">
+							<div class="form-row">
+								<div class="col-md-8">
+									<label for="primeiroNome">Nome</label>
+									<input type="text" class="form-control" required id="primeiroNome" name="primeiroNome" placeholder="Digite seu nome">
+								</div>
+								<div class="col-md-4">
+									<label for="rg">RG</label>
+									<input type="text" class="form-control" id="rg" required name="rg">
+								</div>
+								
+							</div>
+						</div>
+						<div class="form-group">
+							<div  class="form-row">
+								<div class="col-md-8">
+									<label for="email">Email</label>
+									<input type="email" class="form-control" id="email" required name="email" placeholder="Digite seu email">
+								</div>
+								<div class="col-md-4">
+										<label for="data_nascimento">Data de Nacimento</label>
+										<input type="date" class="form-control" id="data_nascimento" required name="data_nascimento">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="form-row">
+								<div class="col-md-5">
+										<label for="profissao">Profissao</label>
+										<input type="text" class="form-control" id="profissao" required name="profissao" placeholder="Digite sua profissao">
+							</div>
+								<div class="col-md-4">
+									<label for="cidade">Cidade</label>
+									<input type="text" class="form-control" id="cidade" required name="cidade">
+								</div>
+								<div class="col-md-3">
+									<label for="estado">Estado</label>
+									<select class="form-control text-dark" style="height: 60%;">
+										<option value="" selected disabled hidden>Selecione</option>
+										<option value="">Mg</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="form-row">
+								<div class="col-md-6">
+									<label for="telefone">Telefone</label>
+									<input type="text" class="form-control" id="telefone" required name="telefone">
+								</div>
+								<div class="col-md-6">
+								<label for="whats">Whatapp</label>
+								<input type="text" class="form-control" id="whats" required name="whats">
+							</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="form-row">
+								<div class="col-md-12">
+									<label for="descricao">Descrição</label>
+									<textarea class="form-control" id="descricao" required name="descricao"></textarea>
+								</div>
+								
+							</div>
+						</div>
+						<button class="button_login btn-block">Registrar-se</button>
+						<div class="card-footer text-center">
+							<a href="recuperar.html" class="d-block small mt-3">Esqueceu a senha?</a>
+							<a href="login.html" class="d-block small">Pagina de Login</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+  <script src="jquery/dist/jquery.js"></script>
+        <script src="popper.js/dist/popper.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+    </body>
+</html>

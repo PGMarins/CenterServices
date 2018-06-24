@@ -22,6 +22,7 @@ border:4px solid #26759E;font-size:13px;font-family:arial, helvetica, sans-serif
  background-image: -ms-linear-gradient(top, #3093C7, #1C5A85);
  background-image: -o-linear-gradient(top, #3093C7, #1C5A85);
  background-image: linear-gradient(to bottom, #3093C7, #1C5A85);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3093C7, endColorstr=#1C5A85);
+ text-transform: capitalize;
  
 }
 

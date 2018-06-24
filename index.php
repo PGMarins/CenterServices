@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<?php session_start();
+if(isset($_GET['sair'])) $sair = $_GET['sair'];
+else $sair=0;
+
+if($sair==1){
+	session_destroy();
+	header("location:index.php");
+}
+?>
 <html lang="pt-br">
 <head>
   <title>CenterServiçes</title>
@@ -9,6 +18,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="Dashboard/bibliotecas/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
       <nav class="navbar fixed-top navbar-expand-md bg-warning navbar-dark"><!--começo da navbar-->
@@ -48,7 +58,25 @@
 			</div>
 		</div>
 	</form>
-	<button class="button_busca" type="button" onclick="location.href='login.html'">Login</button>
+	<?php
+		if(isset($_SESSION['usuario'])){
+			echo "<ul class='navbar-nav'><li class='nav-item dropdown'>";
+				echo "<button class='button_busca nav-link dropdown-toggle' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' type='button' onclick='location.href=login.php'><span class='text-success'>
+					<i class='fa fa-fw fa-circle'></i>
+					</span><i>".$_SESSION['usuario']."</i></button>";
+					echo "<div class='dropdown-menu bg-info' aria-labelledby='navbarDropdown'>";
+					echo "<a class='dropdown-item' href='?sair=1'>Sair</a>";
+					echo"</div>";
+			 echo "</li></ul>";
+		}
+		else{
+$pagina=<<<EOPAGE
+<button class="button_busca" type="button" onclick="location.href='login.php'">Login</button>
+EOPAGE;
+echo $pagina;
+		}
+	?>
+
           </div>  
       </nav>
       <div id="demo" class="carousel slide" data-ride="carousel">
