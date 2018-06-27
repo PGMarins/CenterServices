@@ -7,8 +7,14 @@
 #footer{
 	background-color:#0000FF;
 }
+.footer1{
+Width: 520%;
+}
 #conter{
 	margin-top:-13px;
+}
+#loginfooter{
+	margin-right:100px;
 }
 body{
 	margin-top:3rem;

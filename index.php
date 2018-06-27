@@ -23,41 +23,41 @@ if($sair==1){//se sair for igual a 1 destroi a sessao apagando os dados da mesma
 <body>
       <nav class="navbar fixed-top navbar-expand-md bg-warning navbar-dark"><!--começo da navbar-->
            <img src="img/nome.png" alt="Logo" class="mr-lg-3" width="270" height="40"><!--logo-->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#"><strong>Home</strong></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><strong>Trabalhe conosco</strong></a>
-                </li>
-                <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>
-					  Serviços
-					</strong></a>
-					<div class="dropdown-menu bg-info" aria-labelledby="navbarDropdown">
-					  <a class="dropdown-item" href="#"><strong>Todas Areas</strong></a><!--dropdown com as areas de serviços-->
-					  <div class="dropdown-divider"></div>
-					  <a class="dropdown-item" href="#">Informatica</a>
-					  <a class="dropdown-item" href="#">Musical</a>
-					  <a class="dropdown-item" href="#">Artes</a>
-					  <a class="dropdown-item" href="#">Construção</a>
-					  <a class="dropdown-item" href="#">Cursos</a>
-					  <a class="dropdown-item" href="#">Transportes</a>
-					</div>
-				 </li>
-	  </ul>
-	<form class="form-inline mr-2 ">
-		<div class="input-group d-flex justify-content-end">
-			<input type="text" class="form-control" placeholder="Pesquisar..." aria-label="Pesquisar..." aria-describedby="pesquisar">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+<div class="collapse navbar-collapse" id="collapsibleNavbar">
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item">
+			<a class="nav-link active" href="#"><strong>Home</strong></a>
+		</li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><strong>Trabalhe conosco</strong></a>
+        </li>
+        <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>
+				 Serviços
+			</strong></a>
+			<div class="dropdown-menu bg-info" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="#"><strong>Todas Areas</strong></a><!--dropdown com as areas de serviços-->
+					<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Informatica</a>
+						<a class="dropdown-item" href="#">Musical</a>
+						<a class="dropdown-item" href="#">Artes</a>
+						<a class="dropdown-item" href="#">Construção</a>
+						<a class="dropdown-item" href="#">Cursos</a>
+						<a class="dropdown-item" href="#">Transportes</a>
+			</div>
+		</li>
+	</ul>
+<form class="form-inline mr-2 ">
+	<div class="input-group d-flex justify-content-end">
+		<input type="text" class="form-control" placeholder="Pesquisar..." aria-label="Pesquisar..." aria-describedby="pesquisar">
 			<div class="input-group-append">
 				<button class="button_busca" type="button">Buscar</button>
 			</div>
-		</div>
-	</form>
+	</div>
+</form>
 	<?php
 		if(isset($_SESSION['usuario'])){// verifica se existe usuario conectado, caso exista ela muda o botao de login para o nome do usuario
 			echo "<ul class='navbar-nav'><li class='nav-item dropdown'>";
@@ -78,55 +78,50 @@ EOPAGE;
 echo $pagina;
 		}
 	?>
-
-          </div>  
+ </div>  
       </nav>
-      <div id="demo" class="carousel slide" data-ride="carousel">
-
-            <!-- Indicadores -->
-            <ul class="carousel-indicators">
-              <li data-target="#demo" data-slide-to="0" class="active"></li>
-              <li data-target="#demo" data-slide-to="1"></li>
-              <li data-target="#demo" data-slide-to="2"></li>
-            </ul>
-        
-            <!-- O carrossel -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <img class="img-fluid" src="img/logoo.png" alt="logo" width="1600" height="500">
-                  <div class="carousel-caption">
-                    <h3>CenterServiçes</h3>
-                    <p>Prestamos serviços em todas as areas</p>
-                  </div>  
-              </div>
-              <div class="carousel-item">
-                  <img class="img-fluid" src="img/construcao.png" alt="construcao" width="1600" height="500">
-                  <div class="carousel-caption">
-                   <span class="d-md-none"> <h3>Area completa</h3>
-                    <p>De reformas, consertos até construção</p></span>
-                  </div>  
-              </div>
-              <div class="carousel-item">
-                  <img class="img-fluid" src="img/cursos.png" alt="Cursos" width="1600" height="500">
-                  <div class="carousel-caption">
-                    <h3>Cursos</h3>
-                   <span class="d-sm-none d-xs-none"> <p>Aprenda oque quiser temos muitas opções venha conhecer</p></span>
-                  </div>   
-              </div>
-            </div>
-        
-            <!-- Controles esquerdo e direito -->
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-		<div class="card-header" id="ali"><!--divisão-->
-					</div>
+<div id="demo" class="carousel slide" data-ride="carousel">
+ <!-- Indicadores -->
+    <ul class="carousel-indicators">
+		<li data-target="#demo" data-slide-to="0" class="active"></li>
+		<li data-target="#demo" data-slide-to="1"></li>
+		<li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+ <!-- O carrossel -->
+<div class="carousel-inner">
+	<div class="carousel-item active">
+		<img class="img-fluid" src="img/logoo.png" alt="logo" width="1600" height="500">
+			<div class="carousel-caption">
+				<h3>CenterServiçes</h3>
+				<p>Prestamos serviços em todas as areas</p>
+			</div>  
+	</div>
+<div class="carousel-item">
+	<img class="img-fluid" src="img/construcao.png" alt="construcao" width="1600" height="500">
+	<div class="carousel-caption">
+		<span class="d-md-none"> <h3>Area completa</h3>
+		<p>De reformas, consertos até construção</p></span>
+	</div>  
+</div>
+<div class="carousel-item">
+	<img class="img-fluid" src="img/cursos.png" alt="Cursos" width="1600" height="500">
+	<div class="carousel-caption">
+		<h3>Cursos</h3>
+		<span class=" d-xs-none"> <p>Aprenda oque quiser temos muitas opções venha conhecer</p></span>
+	</div>   
+</div>
+</div>
+<!-- Controles esquerdo e direito -->
+	<a class="carousel-control-prev" href="#demo" data-slide="prev">
+		<span class="carousel-control-prev-icon"></span>
+	</a>
+	<a class="carousel-control-next" href="#demo" data-slide="next">
+		<span class="carousel-control-next-icon"></span>
+	</a>
+ </div>
+<div class="card-header" id="ali"><!--divisão--></div>
         <div class="container-fluid">
-          <div class="row">
+			<div class="row">
             <div class="col-12 col-lg-9">
 				<div class="card text-center">
 					<div class="card-header bg-primary">
@@ -189,12 +184,11 @@ echo $pagina;
             <div class="col-12 col-lg-9">
 				<div class="card-header" id="aqui">
 					</div>
-	<div class="jumbotron">
-  		<div class="container">
-  <h2>Trabalhos já realizados</h2>
-  <br>
-  <!-- Menu do jumbotron -->
-  <ul class="nav nav-tabs" role="tablist">
+<div class="jumbotron">
+  	<div class="container">
+		<h2>Trabalhos já realizados</h2>
+<!-- Menu do jumbotron -->
+<ul class="nav nav-tabs" role="tablist">
     <li class="nav-item">
       <a class="nav-link active" data-toggle="tab" href="#home">FOTOS</a>
     </li>
@@ -204,10 +198,9 @@ echo $pagina;
     <li class="nav-item">
       <a class="nav-link" data-toggle="tab" role="tab" aria-control="menu" href="#menu2">INDICAÇÕES DE CLIENTES</a>
     </li>
-  </ul>
-
-  <!--conteudos do menu -->
-  <div class="tab-content">
+</ul>
+<!--conteudos do menu -->
+<div class="tab-content">
     <div id="home" class="container tab-pane active"><br>
       <h3>Fotos</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -220,34 +213,82 @@ echo $pagina;
       <h3>Comentarios</h3>
       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,</p>
     </div>
-  </div>
+</div>
+	</div>
+</div>
+			</div> 
+<div class="col-12 col-lg-3 border border-bottom-0 border-top-0">
+	<center><img src="img/info.png" class="img-fluid rounded float"></center>
+</div> 
+<div class="col-12 col-lg-9 bg-danger">
+	article 4
+</div> 
+<div class="col-12 col-lg-3 bg-info"><!--colocação dos conteudos do site usando as col-->
+	aside 4
+</div>
+			</div>
+		</div>		
+<div class="card-footer bg-secondary"></div>  
+<div class="card-footer">
+	<div class="card-footer bg-secondary text-light"><strong>Conecte-se Conosco nas Redes Sociais</strong></div>  
+	<div class="card bg-dark text-white">
+	<img class="card-img" src="img/footer.png" alt="Card image">
+		<div class="card-img-overlay">
+			<div class="col-12 col-md-9 col-lg-4 offset-0">
+				<h3 class="card-title">centerServices</h3>
+					<div class="row">
+						<hr style="height:1px; border:none; color:white; background-color:white; margin-top: 0px; margin-bottom: 0px; width:10%; margin-left:0%;"/>
+							<h5 class="card-text">A Empressa que veio para facilidar a vida de toda população.</h5>
+						<hr style="height:1px; border:none; color:white; background-color:white; margin-top: 0px; margin-bottom: 0px; width:40%; margin-left:0%;"/>
+							<p class="card-text">Vasta Areas de Serviços</p>
+						<hr style="height:1px; border:none; color:white; background-color:white; margin-top: 0px; margin-bottom: 0px; width:12%; margin-left:0%;"/>
+							<p class="card-text">Vasta Areas de Cursos</p>
+						<hr style="height:1px; border:none;color:white; background-color:white; margin-top: 0px; margin-bottom: 0px; width:12%; margin-left:0%;"/>
+							<p class="card-text">Vasta Areas de Transportes</p>
+						<hr style="height:1px; border:none; color:white; background-color:white; margin-top: 0px; margin-bottom: 0px; width:14%; margin-left:0%;"/>
+							<p class="card-text">E muito mais...</p>
+						<hr style="height:1px; border:none; color:white; background-color:white; margin-top: 0px; margin-bottom: 0px; width:8%; margin-left:0%;"/>
+					</div>
+			</div>
+<div class="container">
+	<div class="row">
+		<div class="col-12 col-md-9 col-lg-4 offset-9">
+			<div class="card bg-dark ">
+				<div class="card-body tex-dark">
+					<form method="post" action="logar.php">
+						<div class="form-group">
+							<label for="email text-dark">Email</label>
+							<input type="email" class="bg-dark" class="form-control" id="email" name="email" required placeholder="Digite seu email">
+							<p class="font-weight-light text-secondary">@seudominio.com</p>
+						</div>
+						<div class="form-group">
+							<label for="senha">Senha</label>
+							<input type="password" class="form-control bg-dark" id="senha" required name="senha" placeholder="Digite sua senha">
+						</div>
+						<div class="form-group">
+								<div class="form-check">
+									<label class="form-check-label">
+										<input type="checkbox">
+											Manter conectado.
+									</label>
+								</div>
+							</div>
+						<button class="button_login btn-block">ENTRAR</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
+		</div>
 	</div>
-					</div> 
-            <div class="col-12 col-lg-3 border border-bottom-0 border-top-0">
-             <center><img src="img/info.png" class="img-fluid rounded float"></center>
-            </div> 
-            <div class="col-12 col-lg-9 bg-danger">
-              article 4
-            </div> 
-            <div class="col-12 col-lg-3 bg-info"><!--colocação dos conteudos do site usando as col-->
-              aside 4
-            </div>
-			 <div class="col-12 col-lg-12">
-				<div class="card-footer bg-secondary">
-				</div>  
-			</div>  
-			 <div class="col-12">
-				<div class="card-footer" id="footer">
-					<div class="text-center bg-info">
-				<small>CenterServiçes2018</small>
-					</div>
-				</div>  
-            </div>  
-          </div>
-        </div>
-
+</div>
+<div class="footer" id="footer">
+	<div class="text-center bg-info">
+		<small>CenterServiçes2018</small>
+	</div>
+</div>  
 	  <script src="jquery/dist/jquery.js"></script>
         <script src="popper.js/dist/popper.js"></script>
         <script src="js/bootstrap.bundle.js"></script>
