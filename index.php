@@ -14,23 +14,25 @@ if($sair==1){//se sair for igual a 1 destroi a sessao apagando os dados da mesma
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/estilo1.css">
+  <link rel="stylesheet" type="text/css" href="css/estilo1.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   	<link rel="stylesheet" type="text/css" href="Dashboard/bibliotecas/font-awesome/css/font-awesome.min.css">
 </head>
-<body>
-      <nav class="navbar fixed-top navbar-expand-md bg-warning navbar-dark"><!--começo da navbar-->
-           <img src="img/nome.png" alt="Logo" class="mr-lg-3" width="270" height="40"><!--logo-->
+<body class="fundoinicial">
+      <nav class="navbar fixed-top navbar-expand-lg bg-warning navbar-dark"><!--começo da navbar-->
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 <div class="collapse navbar-collapse" id="collapsibleNavbar">
 	<ul class="navbar-nav mr-auto">
-		<li class="nav-item">
-			<a class="nav-link active" href="#"><strong>Home</strong></a>
-		</li>
+			<li class="nav-item">
+	           <img src="img/nome.png" alt="Logo" class="img-fluid" width="270" height="40"><!--logo-->
+			</li>
+		
+			<a class="nav-link active" href="index.php"><strong>Home</strong></a>
+		
         <li class="nav-item">
             <a class="nav-link" href="#"><strong>Trabalhe conosco</strong></a>
         </li>
@@ -39,14 +41,19 @@ if($sair==1){//se sair for igual a 1 destroi a sessao apagando os dados da mesma
 				 Serviços
 			</strong></a>
 			<div class="dropdown-menu bg-info" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item" href="#"><strong>Todas Areas</strong></a><!--dropdown com as areas de serviços-->
+				<a class="dropdown-item" href="servicos.php"><strong>Todas Areas</strong></a><!--dropdown com as areas de serviços-->
 					<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Informatica</a>
-						<a class="dropdown-item" href="#">Musical</a>
-						<a class="dropdown-item" href="#">Artes</a>
-						<a class="dropdown-item" href="#">Construção</a>
-						<a class="dropdown-item" href="#">Cursos</a>
-						<a class="dropdown-item" href="#">Transportes</a>
+			<a class="dropdown-item" href="Cursos.php">Cursos</a>
+			<a class="dropdown-item" href="#">Artes</a>
+			<a class="dropdown-item" href="#">Pintor</a>
+			<a class="dropdown-item" href="#">Musical</a>
+			<a class="dropdown-item" href="#">Construção</a>
+			<a class="dropdown-item" href="#">Eletricista</a>
+			<a class="dropdown-item" href="transportes.php">Transportes</a>
+			<a class="dropdown-item" href="programadores.php">Programadores</a>
+			<a class="dropdown-item" href="#">Organizadores</a>
+			<a class="dropdown-item" href="#">Limpeza e cozinha</a>
+			<a class="dropdown-item" href="#">Manutenção em geral</a>
 			</div>
 		</li>
 	</ul>
@@ -123,15 +130,15 @@ echo $pagina;
         <div class="container-fluid">
 			<div class="row">
             <div class="col-12 col-lg-9">
-				<div class="card text-center">
-					<div class="card-header bg-primary">
+			
+					<div class="card-header bg-primary text-center">
 				Entre e encontre oque precisa 
 					</div> 
 						<div class="btn-wrap"><!--imagem de acesso ao menu-->
 						<img class="card-img-top" src="img/menu2.png" alt="Card image cap" style="height: 350px">
-						<button class="btn">Entrar aqui</button>
+						<button class="button_busca offset-6" id="menu1" type="button" onclick="location.href='servicos.php'">Entre Aqui</button>
 						</div>
-				</div>
+				
 					<div class="card-footer bg-primary text-center">
 					CenterServiçes esta aqui para facilitar a vida de todos
 					</div>
@@ -141,8 +148,8 @@ echo $pagina;
 		   <center><img src="img/curso.png" class="img-fluid rounded float"></center>
             </div>
             <div class="col-12 col-lg-9 mt-5 mb-5"><!--começo dos cards-->
-			<div class="card text-center">
-                 <div class="card-deck">
+		
+                 <div class="card-deck text-center">
 				<div class="card">
 					<img src="img/quemsomos.jpg" class="card-img-top img-fluid">
 					<div class="card-body">
@@ -150,7 +157,29 @@ echo $pagina;
 						<h6 class="card-subtitle mb-2 text-muted">Tudo sobre CenterServiçes</h6>
 					</div>
 					<div class="card-footer">
-						<button class="button_busca">Entrar aqui</button>
+						<button type="button" class="button_busca" data-toggle="modal" data-target="#exampleModalCenter">
+  Entrar aqui
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 					</div>
 				</div>
 				<div class="card">
@@ -172,123 +201,120 @@ echo $pagina;
 
 					</div>
 					<div class="card-footer">
-						<button class="button_busca">Entrar aqui</button>
+					<button type="button" class="button_busca" data-toggle="modal" data-target="#exampleModalCenter">
+  Entrar aqui
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+					
 					</div>
 				</div>
 				</div>
-            </div> 
+           
             </div> 
             <div class="col-12 col-lg-3 border border-bottom-0 border-top-0">
              <img src="img/cep.png" class="img-fluid rounded float">
             </div>
             <div class="col-12 col-lg-9">
-				<div class="card-header" id="aqui">
-					</div>
+				
 <div class="jumbotron">
   	<div class="container">
 		<h2>Trabalhos já realizados</h2>
-<!-- Menu do jumbotron -->
-<ul class="nav nav-tabs" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link active" data-toggle="tab" href="#home">FOTOS</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#menu1">VIDEOS</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" role="tab" aria-control="menu" href="#menu2">INDICAÇÕES DE CLIENTES</a>
-    </li>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Comentarios</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Fotos</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Videos</a>
+  </li>
 </ul>
-<!--conteudos do menu -->
-<div class="tab-content">
-    <div id="home" class="container tab-pane active"><br>
-      <h3>Fotos</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div id="menu1" class="container tab-pane fade"><br>
-      <h3>Videos</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div id="menu2" class="container tab-pane fade"><br>
-      <h3>Comentarios</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,</p>
-    </div>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Comentarios</div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Fotos</div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Videos</div>
 </div>
 	</div>
 </div>
 			</div> 
-<div class="col-12 col-lg-3 border border-bottom-0 border-top-0">
+<div class="col-12 col-lg-3 border border-bottom-0 border-top-0 mb-5">
 	<center><img src="img/info.png" class="img-fluid rounded float"></center>
 </div> 
-<div class="col-12 col-lg-9 bg-danger">
-	article 4
+			</div>
+		</div>	
+		<div class="footer" id="footer">
+	<div class="bg-info">
+		<small><strong>Conecte-Se conosco</strong></small>
+	</div>
 </div> 
-<div class="col-12 col-lg-3 bg-info"><!--colocação dos conteudos do site usando as col-->
-	aside 4
-</div>
-			</div>
-		</div>		
-<div class="card-footer bg-secondary"></div>  
-<div class="card-footer">
-	<div class="card-footer bg-secondary text-light"><strong>Conecte-se Conosco nas Redes Sociais</strong></div>  
-	<div class="card bg-dark text-white">
-	<img class="card-img" src="img/footer.png" alt="Card image">
-		<div class="card-img-overlay">
-			<div class="col-12 col-md-9 col-lg-4 offset-0">
-				<h3 class="card-title">centerServices</h3>
-					<div class="row">
-						<hr style="height:1px; border:none; color:white; background-color:white; margin-top: 0px; margin-bottom: 0px; width:10%; margin-left:0%;"/>
-							<h5 class="card-text">A Empressa que veio para facilidar a vida de toda população.</h5>
-						<hr style="height:1px; border:none; color:white; background-color:white; margin-top: 0px; margin-bottom: 0px; width:40%; margin-left:0%;"/>
-							<p class="card-text">Vasta Areas de Serviços</p>
-						<hr style="height:1px; border:none; color:white; background-color:white; margin-top: 0px; margin-bottom: 0px; width:12%; margin-left:0%;"/>
-							<p class="card-text">Vasta Areas de Cursos</p>
-						<hr style="height:1px; border:none;color:white; background-color:white; margin-top: 0px; margin-bottom: 0px; width:12%; margin-left:0%;"/>
-							<p class="card-text">Vasta Areas de Transportes</p>
-						<hr style="height:1px; border:none; color:white; background-color:white; margin-top: 0px; margin-bottom: 0px; width:14%; margin-left:0%;"/>
-							<p class="card-text">E muito mais...</p>
-						<hr style="height:1px; border:none; color:white; background-color:white; margin-top: 0px; margin-bottom: 0px; width:8%; margin-left:0%;"/>
+		<footer id="img">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-md-4">
+						<p>A Empressa que veio para facilidar a vida de toda população.<br/>
+									Vasta Areas de Serviços<br/>
+									Vasta Areas de Cursos<br/>
+									Vasta Areas de Transportes<br/>
+									E muito mais...</p>
 					</div>
-			</div>
-<div class="container">
-	<div class="row">
-		<div class="col-12 col-md-9 col-lg-4 offset-9">
-			<div class="card bg-dark ">
-				<div class="card-body tex-dark">
-					<form method="post" action="logar.php">
-						<div class="form-group">
-							<label for="email text-dark">Email</label>
-							<input type="email" class="bg-dark" class="form-control" id="email" name="email" required placeholder="Digite seu email">
-							<p class="font-weight-light text-secondary">@seudominio.com</p>
-						</div>
-						<div class="form-group">
-							<label for="senha">Senha</label>
-							<input type="password" class="form-control bg-dark" id="senha" required name="senha" placeholder="Digite sua senha">
-						</div>
-						<div class="form-group">
-								<div class="form-check">
-									<label class="form-check-label">
-										<input type="checkbox">
-											Manter conectado.
-									</label>
-								</div>
+					<div class="col-12 col-md-4">
+						<p>A Empressa que veio para facilidar a vida de toda população.<br/>
+									Vasta Areas de Serviços<br/>
+									Vasta Areas de Cursos<br/>
+									Vasta Areas de Transportes<br/>
+									E muito mais...</p>
+					</div>
+					<div class="col-12 col-md-4">
+						<form method="post" action="logar.php">
+							<div class="form-group">
+							<h2>Faça Login</h2>
+								<label for="email">Email</label>
+								<input type="email" class="form-control" id="email" name="email" required placeholder="Digite seu email">
+								<p class="font-weight-light text-secondary">@seudominio.com</p>
 							</div>
-						<button class="button_login btn-block">ENTRAR</button>
-					</form>
+							<div class="form-group">
+								<label for="senha">Senha</label>
+								<input type="password" class="form-control" id="senha" required name="senha" placeholder="Digite sua senha">
+							</div>
+							<div class="form-group">
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="checkbox">
+												Manter conectado.
+										</label>
+									</div>
+							</div>
+							<button class="button_login btn-block">ENTRAR</button>
+						</form>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</div>
-
-		</div>
-	</div>
-</div>
+		</footer>
 <div class="footer" id="footer">
 	<div class="text-center bg-info">
 		<small>CenterServiçes2018</small>
 	</div>
-</div>  
+</div> 
 	  <script src="jquery/dist/jquery.js"></script>
         <script src="popper.js/dist/popper.js"></script>
         <script src="js/bootstrap.bundle.js"></script>

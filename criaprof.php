@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+<?php
+session_start();//carrega as sessoes de usuarios
+if(isset($_SESSION['profissionais'])) header("location: index.php");//caso o usuario logado tente ir a tela de login ele sera redirecionado a tela inicial novamente.
+?>
   <title>Cradastro de Profissionais</title>
   <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,10 +17,17 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body class="fundo">
-<div class="container">
+<div class="container-fluid">
 	<div class="row">
-		<div class="col-12 col-md-9 col-lg-12 offset-md-2 offset-lg-0">
-			<div class="card" style="margin-top: 2rem;">
+		<div class="col-12 col-md-4 col-lg-5 mt-5">
+			<p>A Empressa que veio para facilidar a vida de toda população.<br/>
+									Vasta Areas de Serviços<br/>
+									Vasta Areas de Cursos<br/>
+									Vasta Areas de Transportes<br/>
+									E muito mais...</p>
+		</div>
+		<div class="col-12 col-md-8 col-lg-7 offset-md-0 offset-lg-5">
+			<div class="card" style="margin-top:1;">
 				<div class="card-header text-center"><h4>CRIAR UM CURRICULUM</h4></div>
 				<center><span class="oi oi-document"></span></center>
 				<div class="card-body">
@@ -27,7 +38,7 @@
 									<label for="nome">Nome</label>
 									<input type="text" class="form-control" required id="nome" name="nome" placeholder="Digite seu nome">
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-4">
 									<label for="endereco">Endereço</label>
 									<input type="text" class="form-control" required id="endereco" name="nome" placeholder="Digite seu Endereço">
 								</div>
@@ -48,7 +59,7 @@
 									<label for="email">Email</label>
 									<input type="email" class="form-control" id="email" placeholder="Digite seu Email" required name="email" placeholder="Digite seu email">
 								</div>
-								<div class="col-md-2">
+								<div class="col-md-3">
 									<label for="cep">CEP</label>
 									<input type="text" class="form-control" id="cep" placeholder="Digite seu Cep" required name="rg">
 								</div>
@@ -60,7 +71,7 @@
 						</div>
 						<div class="form-group">
 							<div class="form-row"> <!--classe linha bootstrap -->
-								<div class="col-md-2">
+								<div class="col-md-3">
 										<label for="profissao">Area de Profissao</label>
 									<select class="form-control text-dark" style="height: 60%;">
 										<option value="" selected disabled hidden>Selecione</option>
@@ -99,7 +110,7 @@
 							<div class="form-row">
 								<div class="col-md-4">
 									<label for="telefone">Telefone</label>
-									<input type="text" class="form-control" id="telefone" pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{3,4}$" placeholder="Digite seu telefone" required name="telefone">
+									<input type="text" class="form-control" id="telefone" placeholder="Digite seu telefone" required name="telefone">
 								</div>
 								<div class="col-md-4">
 								<label for="whtasapp">Whatsapp</label>
@@ -117,10 +128,6 @@
 							</div>
 						</div>
 						<button class="button_login btn-block">Registrar-se</button>
-						<div class="card-footer text-center">
-							<a href="recuperar.html" class="d-block small mt-3">Esqueceu a senha?</a>
-							<a href="login.html" class="d-block small">Pagina de Login</a>
-						</div>
 					</form>
 				</div>
 			</div>
