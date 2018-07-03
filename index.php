@@ -264,7 +264,9 @@ echo $pagina;
 		</div>	
 		<div class="footer" id="footer">
 	<div class="bg-info">
-		<small><strong>Conecte-Se conosco</strong></small>
+	<div class="row">
+		<small><strong>Conecte-Se conosco</strong></small><small><i class='fa fa-fw fa-facebook-square'>FACEBOOK</i></small><small><i class='fa fa-fw fa-instagram'>INSTAGRAN</i></small>
+	</div>
 	</div>
 </div> 
 		<footer id="img">

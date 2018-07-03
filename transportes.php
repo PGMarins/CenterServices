@@ -121,7 +121,7 @@ echo $pagina;
 					<div class="card-body">
 						<h6 class="card-subtitle mb-2 text-muted">PHP, Android,c++, josgos, app, entre outros... </h6>
 					</div>
-						<button class="button_busca card-footer" type="button" onclick="location.href='programadores.php'">Entre Aqui</button>
+						<button class="button_busca card-footer" type="button" onclick="location.href='servicos.php'">Entre Aqui</button>
 			</div>
 				</div>
             </div> 
