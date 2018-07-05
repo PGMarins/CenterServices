@@ -72,6 +72,9 @@ if($sair==1){//se sair for igual a 1 destroi a sessao apagando os dados da mesma
 					<i class='fa fa-fw fa-circle'></i>
 					</span><i>".$_SESSION['usuario']."</i></button>";//exibe o nome do usuario logado
 					echo "<div class='dropdown-menu bg-info' aria-labelledby='navbarDropdown'>";
+					if($_SESSION['grupo']==1){
+						echo "<a class='dropdown-item' href='./Dashboard'>Admin</a>";
+					}
 					echo "<a class='dropdown-item' href='?sair=1'>Sair</a>";
 					echo"</div>";
 			 echo "</li></ul>";

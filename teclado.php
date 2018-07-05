@@ -15,6 +15,7 @@ if($sair==1){//se sair for igual a 1 destroi a sessao apagando os dados da mesma
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/estilo1.css">
+    <link rel="stylesheet" href="iconic/font/css/open-iconic-bootstrap.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -87,27 +88,34 @@ echo $pagina;
 	?>
  </div>  
       </nav>
-	  <div class="card-header">
-	 <center><img src="img/teclado.png" class="img-fluid"></center></div>
-	   <center> 
-			  <div class="col-12 col-lg-12">
-                 <div class="card-deck text-center">
+<center> 
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-lg-12">
+					<div class="card-deck text-center ">
+						<div class="card mb-5">
+							<div class="card-header text-center"><strong><h4>AULAS DE TECLADO</h4></strong></div>
+								<div class="card-body">
+										<h4 class="card-title mt-5">texto</h4>
+										<h6 class="card-subtitle mb-2 text-white">.</h6>				
+								</div>
+									<div class="card-footer text-center">
+									<img class="card-img" src="img/tecladoo.png" alt="musica">
+									</div>
+						</div>
 				<div class="card mb-5">
-					<img src="img/.png" class="card-img-top img-fluid">
-					<div class="card-body">
-						<h4 class="card-title">texto</h4>
-						<h6 class="card-subtitle mb-2 text-muted">sobre como contratar...</h6>				
-					</div>
-				</div>
-			<div class="card mb-5">
 					<img src="img/.png" class="card-img-top img-fluid">
 					<div class="card-body">
 						<h5 class="card-title">formulario </h5>
 						<h6 class="card-subtitle mb-2 text-muted">para enviar a mensagem decontratação...</h6>				
 					</div>
 				<button class="button_busca card-footer" type="button" onclick="location.href='servicos.php'">Entre Aqui</button>
-				</div>		
-	  </center>
+				</div>
+					</div>
+				</div>
+			</div>
+		</div>			
+</center>
 	    <div class="card-footer bg-primary text-center mt-5">
 		CenterServiçes2018
 		</div>

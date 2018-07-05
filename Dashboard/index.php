@@ -165,7 +165,7 @@
 					</form>
 				</li>
 				<li class="nav-item"><!--saida da area adiministrativa-->
-					<a class="nav-link" href="#">
+					<a class="nav-link" href="../index.php">
 						<i class="fa fa-sign-out">logout</i>
 					</a>
 				</li>
@@ -193,6 +193,7 @@
 			<div class="col-12">
 				<h1>Titulo da pagina</h1>
 				<p>aqui e o conteudo da pagina que ira aparecer</p>
+				<?php include "exibe.php";?>
 			</div>
 		</div>
 		</div>

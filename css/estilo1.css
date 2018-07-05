@@ -74,3 +74,8 @@ footer#img {
 	color: white;
 	padding: 10px;
 }
+#imgservico {
+	background-image: url("../img/bateria.jpg");
+	color: white;
+	padding: 10px;
+}

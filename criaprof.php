@@ -19,15 +19,18 @@ if(isset($_SESSION['profissionais'])) header("location: index.php");//caso o usu
 <body class="fundo">
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-12 col-md-4 col-lg-5 mt-5">
-			<p>A Empressa que veio para facilidar a vida de toda população.<br/>
-									Vasta Areas de Serviços<br/>
-									Vasta Areas de Cursos<br/>
-									Vasta Areas de Transportes<br/>
-									E muito mais...</p>
+		<div class="col-12 col-md-4 col-lg-6"><br/><br/><br/><br/>
+			<div class="card-header">
+				<p>A Empressa que veio para facilidar a vida de toda população.<br/>
+										Vasta Areas de Serviços<br/>
+										Vasta Areas de Cursos<br/>
+										Vasta Areas de Transportes<br/>
+										E muito mais...</p>
+			</div>
 		</div>
-		<div class="col-12 col-md-8 col-lg-7 offset-md-0 offset-lg-5">
-			<div class="card" style="margin-top:1;">
+		
+		<div class="col-12 col-md-8 col-lg-6" >
+			<div class="card" id="CURRICULUM">
 				<div class="card-header text-center"><h4>CRIAR UM CURRICULUM</h4></div>
 				<center><span class="oi oi-document"></span></center>
 				<div class="card-body">
@@ -40,11 +43,11 @@ if(isset($_SESSION['profissionais'])) header("location: index.php");//caso o usu
 								</div>
 								<div class="col-md-4">
 									<label for="endereco">Endereço</label>
-									<input type="text" class="form-control" required id="endereco" name="nome" placeholder="Digite seu Endereço">
+									<input type="text" class="form-control" required id="endereco" name="endereco" placeholder="Digite seu Endereço">
 								</div>
 								<div class="col-md-2">
 									<label for="bairro">Bairro</label>
-									<input type="text" class="form-control" required id="bairro" name="nome" placeholder="Digite seu Bairro">
+									<input type="text" class="form-control" required id="bairro" name="bairro" placeholder="Digite seu Bairro">
 								</div>
 								<div class="col-md-3">
 									<label for="rg">RG</label>
@@ -61,7 +64,7 @@ if(isset($_SESSION['profissionais'])) header("location: index.php");//caso o usu
 								</div>
 								<div class="col-md-3">
 									<label for="cep">CEP</label>
-									<input type="text" class="form-control" id="cep" placeholder="Digite seu Cep" required name="rg">
+									<input type="text" class="form-control" id="cep" placeholder="Digite seu Cep" required name="cep">
 								</div>
 								<div class="col-md-3">
 										<label for="data_nascimento">Data de Nacimento</label>
@@ -70,10 +73,10 @@ if(isset($_SESSION['profissionais'])) header("location: index.php");//caso o usu
 							</div>
 						</div>
 						<div class="form-group">
-							<div class="form-row"> <!--classe linha bootstrap -->
+							<div class="form-row"> 
 								<div class="col-md-3">
 										<label for="profissao">Area de Profissao</label>
-									<select class="form-control text-dark" style="height: 60%;">
+									<select class="form-control text-dark" style="height: 60%;" name="profissao">
 										<option value="" selected disabled hidden>Selecione</option>
 										<option value="cursos">Cursos</option>
 										<option value="reformas_e_construcao">Reformas e construção</option>
@@ -102,7 +105,7 @@ if(isset($_SESSION['profissionais'])) header("location: index.php");//caso o usu
 								</div>
 								<div class="col-md-4">
 									<label for="nacionalidade">Nacionalidade</label>
-									<input type="text" class="form-control" id="nacionalidade" placeholder="Digite sua nacionalidade" required name="rg">
+									<input type="text" class="form-control" id="nacionalidade" placeholder="Digite sua nacionalidade" required name="nacionalidade">
 								</div>
 							</div>
 						</div>
@@ -114,7 +117,7 @@ if(isset($_SESSION['profissionais'])) header("location: index.php");//caso o usu
 								</div>
 								<div class="col-md-4">
 								<label for="whtasapp">Whatsapp</label>
-								<input type="text" class="form-control" id="whtasapp" placeholder="Digite seu Whatsapp" required name="whats">
+								<input type="text" class="form-control" id="whtasapp" placeholder="Digite seu Whatsapp" required name="whtasapp">
 							</div>
 							</div>
 						</div>
@@ -127,7 +130,7 @@ if(isset($_SESSION['profissionais'])) header("location: index.php");//caso o usu
 								
 							</div>
 						</div>
-						<button class="button_login btn-block">Registrar-se</button>
+						<input type="submit" class="button_login btn-block">Registrar-se</button>
 					</form>
 				</div>
 			</div>

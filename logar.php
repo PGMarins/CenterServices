@@ -15,6 +15,7 @@
 	else{
 		while($exibe = mysqli_fetch_assoc($consulta)){
 			$_SESSION['usuario'] = $exibe["nome"];//coloca o nome de usuario encontrado em uma sessao 
+			$_SESSION['grupo'] = $exibe["id_grupo"];//pega o tipo de usuario
 		}
 		 header("location: index.php");
 	}
