@@ -1,5 +1,5 @@
 <?php
-
+header('Content-Type: text/html; charset=utf-8'); 
 include_once("conecta.php");
 	$nome=$_POST['nome']; //variaveis que pegam as informações da area de cadastro.
 	$rg=$_POST['rg'];
