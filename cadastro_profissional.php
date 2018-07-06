@@ -20,3 +20,4 @@ include_once("conecta.php");
 	if(mysqli_affected_rows($conexao)==1)header("location:index.php"); //verifica se a conexao obteve sucesso
 	else header("location:criaprof.php");
 ?>
+ 

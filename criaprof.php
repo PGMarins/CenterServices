@@ -23,7 +23,7 @@ if(isset($_SESSION['profissionais'])) header("location: index.php");//caso o usu
 										Vasta Areas de Cursos<br/>
 										Vasta Areas de Transportes<br/>
 										E muito mais...</p>
-			</div>
+			</div> 
 		</div>
 		
 		<div class="col-12 col-md-8 col-lg-6" >
@@ -73,8 +73,8 @@ if(isset($_SESSION['profissionais'])) header("location: index.php");//caso o usu
 							<div class="form-row"> 
 								<div class="col-md-3">
 										<label for="profissao">Area de Profissao</label>
-									<select class="form-control text-dark" style="height: 60%;" name="profissao">
-										<option value="" selected disabled hidden>Selecione</option>
+									<select  name="profissao" class="form-control text-dark" style="height: 60%;" >
+										<option selected disabled hidden>Selecione</option>
 										<option value="cursos">Cursos</option>
 										<option value="reformas_e_construcao">Reformas e construção</option>
 										<option value="transportes">Transportes</option>
@@ -89,7 +89,7 @@ if(isset($_SESSION['profissionais'])) header("location: index.php");//caso o usu
 										<option value="limpeza_e_Cozinha">Limpeza e Cozinha</option>
 									</select>
 							</div>
-							
+
 								<div class="col-md-3">
 									<label for="cidade">Cidade</label>
 									<input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade" required name="cidade">
