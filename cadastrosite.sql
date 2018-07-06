@@ -2,10 +2,10 @@
 -- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: 03-Jul-2018 às 19:22
--- Versão do servidor: 5.7.19
--- PHP Version: 5.6.31
+-- Host: 127.0.0.1
+-- Generation Time: 06-Jul-2018 às 06:10
+-- Versão do servidor: 10.1.29-MariaDB
+-- PHP Version: 7.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,12 +25,22 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `gp_usuarios`
+--
+
+CREATE TABLE `gp_usuarios` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `profissionais`
 --
 
-DROP TABLE IF EXISTS `profissionais`;
-CREATE TABLE IF NOT EXISTS `profissionais` (
-  `codigo` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `profissionais` (
+  `codigo` int(11) NOT NULL,
   `nome` varchar(40) NOT NULL,
   `email` varchar(50) NOT NULL,
   `profissao` varchar(20) NOT NULL,
@@ -44,10 +54,8 @@ CREATE TABLE IF NOT EXISTS `profissionais` (
   `bairro` varchar(25) DEFAULT NULL,
   `cep` int(15) DEFAULT NULL,
   `endereco` varchar(30) DEFAULT NULL,
-  `nacionalidade` varchar(25) DEFAULT NULL,
-  PRIMARY KEY (`codigo`),
-  UNIQUE KEY `email` (`email`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+  `nacionalidade` varchar(25) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -55,31 +63,71 @@ CREATE TABLE IF NOT EXISTS `profissionais` (
 -- Estrutura da tabela `usuarios`
 --
 
-DROP TABLE IF EXISTS `usuarios`;
-CREATE TABLE IF NOT EXISTS `usuarios` (
-  `codigo` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `usuarios` (
+  `codigo` int(11) NOT NULL,
   `nome` varchar(40) NOT NULL,
   `email` varchar(50) NOT NULL,
   `senha` varchar(40) NOT NULL,
   `sobrenome` text NOT NULL,
-  PRIMARY KEY (`codigo`),
-  UNIQUE KEY `email` (`email`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+  `id_grupo` int(11) NOT NULL DEFAULT '2'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `usuarios`
+-- Indexes for dumped tables
 --
 
-INSERT INTO `usuarios` (`codigo`, `nome`, `email`, `senha`, `sobrenome`) VALUES
-(1, 'paulo', 'paulogabrielmarins@outlook.com', 'e10adc3949ba59abbe56e057f20f883e', 'gabriel'),
-(2, 'bruninho', 'nil@nil.com', '202cb962ac59075b964b07152d234b70', 'gabriel'),
-(3, 'Ariel', 'Ariel@gamil.com', '25f9e794323b453885f5181f1b624d0b', 'Januario'),
-(4, 'Carol', 'carolina@gmail.com', '25f9e794323b453885f5181f1b624d0b', 'Guimaraes'),
-(5, 'Gislene', 'Gislene@hotmail.com', '202cb962ac59075b964b07152d234b70', 'Aparecida'),
-(6, 'jony', 'jony@hotmail.com', '202cb962ac59075b964b07152d234b70', 'silva'),
-(7, 'Ariel', 'Ariel@outlook.com', '202cb962ac59075b964b07152d234b70', 'Januario'),
-(8, 'tocha', 'tochahumano@outlook.com', '202cb962ac59075b964b07152d234b70', 'silva'),
-(9, 'paulo', 'aki@outlook.com', '202cb962ac59075b964b07152d234b70', 'gabriel');
+--
+-- Indexes for table `gp_usuarios`
+--
+ALTER TABLE `gp_usuarios`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `profissionais`
+--
+ALTER TABLE `profissionais`
+  ADD PRIMARY KEY (`codigo`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- Indexes for table `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`codigo`),
+  ADD UNIQUE KEY `email` (`email`),
+  ADD KEY `id_grupo` (`id_grupo`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `gp_usuarios`
+--
+ALTER TABLE `gp_usuarios`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `profissionais`
+--
+ALTER TABLE `profissionais`
+  MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Limitadores para a tabela `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`id_grupo`) REFERENCES `gp_usuarios` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
