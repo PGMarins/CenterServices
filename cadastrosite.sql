@@ -13,7 +13,7 @@ CREATE TABLE profissionais (
   nome varchar(40) NOT NULL,
   email varchar(50) NOT NULL,
   profissao varchar(20) NOT NULL,
-  data_nacimento int(11) NOT NULL,
+  data_nacimento  DATE NOT NULL,
   rg varchar(15) NOT NULL,
   cidade varchar(20) NOT NULL,
   estado varchar(15) NOT NULL,
