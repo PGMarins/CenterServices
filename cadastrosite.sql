@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 06-Jul-2018 às 06:10
+-- Generation Time: 06-Jul-2018 às 06:30
 -- Versão do servidor: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -33,6 +33,14 @@ CREATE TABLE `gp_usuarios` (
   `nome` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Extraindo dados da tabela `gp_usuarios`
+--
+
+INSERT INTO `gp_usuarios` (`id`, `nome`) VALUES
+(1, 'Administrador'),
+(2, 'Usuario');
+
 -- --------------------------------------------------------
 
 --
@@ -57,6 +65,13 @@ CREATE TABLE `profissionais` (
   `nacionalidade` varchar(25) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Extraindo dados da tabela `profissionais`
+--
+
+INSERT INTO `profissionais` (`codigo`, `nome`, `email`, `profissao`, `data_nacimento`, `rg`, `cidade`, `estado`, `descricao`, `telefone`, `whtasapp`, `bairro`, `cep`, `endereco`, `nacionalidade`) VALUES
+(1, 'Bruno Francisco Antunes de Paula', 'brunoantunes94@hotmail.com', '', 0, '12312412', 'BrazÃ³polis', '', 'asdfdsdgafsd', '2312312', '123123123', 'aasdasdasd', 37530, 'asdasd', 'Brasileiro');
+
 -- --------------------------------------------------------
 
 --
@@ -71,6 +86,13 @@ CREATE TABLE `usuarios` (
   `sobrenome` text NOT NULL,
   `id_grupo` int(11) NOT NULL DEFAULT '2'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`codigo`, `nome`, `email`, `senha`, `sobrenome`, `id_grupo`) VALUES
+(2, 'bruno', 'brunoantunes94@hotmail.com', '202cb962ac59075b964b07152d234b70', 'antunes', 2);
 
 --
 -- Indexes for dumped tables
@@ -105,19 +127,19 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT for table `gp_usuarios`
 --
 ALTER TABLE `gp_usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `profissionais`
 --
 ALTER TABLE `profissionais`
-  MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
