@@ -65,7 +65,7 @@ if(isset($_SESSION['profissionais'])) header("location: index.php");//caso o usu
 								</div>
 								<div class="col-md-3">
 										<label for="data_nascimento">Data de Nacimento</label>
-										<input type="date" class="form-control" id="data_nacimento" required name="data_nascimento">
+										<input type="date" class="form-control" id="data_nacimento" required name="data_nacimento">
 								</div>
 							</div>
 						</div>
