@@ -11,7 +11,7 @@
 </head>
 <body class="bg-dark fixed-nav sticky-footer" id="page-top">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav"><!--navbarlateral-->
-		<a class="navbar-brand" href="escritorio.html">Admin CenterServices</a>
+		<a class="navbar-brand" href="index.php">Admin CenterServices</a>
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCurso" aria-control="navbarCurso" aria-expaned="false" aria-label="Navegação Toggle">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -30,7 +30,7 @@
 						</a>
 					</li>
 					<li class="nav-item" data-toggle="tooltip" data-placement="right">
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="profissionais.php">
 							<i class="fa fa-fw fa-clipboard"></i>
 							<span class="nav-link-text">Curriculum</span>
 						</a>
@@ -166,7 +166,7 @@
 				</li>
 				<li class="nav-item"><!--saida da area adiministrativa-->
 					<a class="nav-link" href="../index.php">
-						<i class="fa fa-sign-out">logout</i>
+						<i class="fa fa-sign-out">Sair</i>
 					</a>
 				</li>
 			</ul>
@@ -182,18 +182,14 @@
 		<div class="content-wrapper"><!--aqui começa a pagina em branco-->
 		<div class="container-fluid">
 		<ol class="breadcrumb">
-		<li class="breadcrumb-item">
-		<a href="escritorio.html">home</a>
-		</li>
 			<li class="breadcrumb-item">
-			pagina em branco
+			Home
 			</li>
 		</ol>
 		<div class="row">
 			<div class="col-12">
 				<h1>Titulo da pagina</h1>
 				<p>aqui e o conteudo da pagina que ira aparecer</p>
-				<?php include "exibe.php";?>
 			</div>
 		</div>
 		</div>

@@ -29,32 +29,32 @@ if($sair==1){//se sair for igual a 1 destroi a sessao apagando os dados da mesma
 				<div class="card mb-5">
 					<img src="img/tec.png" class="card-img-top img-fluid">
 					<div class="card-body">
-						<h4 class="card-title">Cursos</h4>
-						<h6 class="card-subtitle mb-2 text-muted">Encontre a sua area e aprenda</h6>
+						<h4 class="card-title">Teclados</h4>
+						<h6 class="card-subtitle mb-2 text-muted">Faça aula na sua casa ou em um local de aulas mesmo</h6>
 					</div>
 					<button class="button_busca card-footer" type="button" onclick="location.href='teclado.php'">Entre Aqui</button>
 				</div>
 				<div class="card mb-5">
 					<img src="img/bat.png" class="card-img-top img-fluid">
 					<div class="card-body">
-						<h5 class="card-title">Desde reformas a grandes contrução</h5>
-						<h6 class="card-subtitle mb-2 text-muted">Profissionais capacitados perto de você, entre e encontre oque precisa</h6>
+						<h5 class="card-title">Curte bateria?</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Faça aulas tanto para aprender quanto para aperfeiçoar</h6>
 					</div>
 					<button class="button_busca card-footer" type="button" onclick="location.href='servicos.php'">Entre Aqui</button>
 				</div>
 				<div class="card mb-5">
 					<img src="img/cant.png" class="card-img-top img-fluid">
 					<div class="card-body">
-						<h4 class="card-title">Transpotes</h4>
-						<h6 class="card-subtitle mb-2 text-muted">Marcar horario com taxi, Moto Taxi, Moto boy, Aluguel de veiculo entre outros...</h6>				
+						<h4 class="card-title">Cantar é muito bom </h4>
+						<h6 class="card-subtitle mb-2 text-muted">Aprenda tecnicas de canto e solte a sua voz</h6>				
 					</div>
 					<button class="button_busca card-footer" type="button" onclick="location.href='servicos.php'">Entre Aqui</button>
 				</div>
 			<div class="card mb-5">
 					<img src="img/vi.png" class="card-img-top img-fluid">
-					<h4 class="card-title">Programadores</h4>
+					<h4 class="card-title">Aulas de violão</h4>
 					<div class="card-body">
-						<h6 class="card-subtitle mb-2 text-muted">PHP, Android,c++, josgos, app, entre outros... </h6>
+						<h6 class="card-subtitle mb-2 text-muted">Um dos instrumentos mais popular venha e faça aulas </h6>
 					</div>
 						<button class="button_busca card-footer" type="button" onclick="location.href='programadores.php'">Entre Aqui</button>
 			</div>
@@ -65,32 +65,32 @@ if($sair==1){//se sair for igual a 1 destroi a sessao apagando os dados da mesma
 				<div class="card mb-5">
 					<img src="img/php.png" class="card-img-top img-fluid">
 					<div class="card-body">
-						<h4 class="card-title">Manutenção em Geral</h4>
-						<h6 class="card-subtitle mb-2 text-muted">Pequenas reformas, consertos, e mais...</h6>				
+						<h4 class="card-title">Aprenda a programar PHP</h4>
+						<h6 class="card-subtitle mb-2 text-muted">Aprenda do basico ao avançado</h6>				
 					</div>
 						<button class="button_busca card-footer" type="button" onclick="location.href='servicos.php'">Entre Aqui</button>
 				</div>
 			<div class="card mb-5">
 					<img src="img/site.png" class="card-img-top img-fluid">
 					<div class="card-body">
-						<h5 class="card-title">Eletricista</h5>
-						<h6 class="card-subtitle mb-2 text-muted">Pequenas instalação, trocas de peças, grandes instalação e mais...</h6>				
+						<h5 class="card-title">Criação de sites</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Aprenda a criar sua proprio site ou trabalhar na area</h6>				
 					</div>
 				<button class="button_busca card-footer" type="button" onclick="location.href='servicos.php'">Entre Aqui</button>
 				</div>
 			<div class="card mb-5">
 					<img src="img/and.png" class="card-img-top img-fluid">
 					<div class="card-body">
-						<h4 class="card-title">Em todas areas</h4>
-						<h6 class="card-subtitle mb-2 text-muted">Aniversarios, festas, Shows, entre outros...</h6>				
+						<h4 class="card-title">Aulas de programação android</h4>
+						<h6 class="card-subtitle mb-2 text-muted">Crie aplicativos, jogos...</h6>				
 					</div>
 					<button class="button_busca card-footer" type="button" onclick="location.href='servicos.php'">Entre Aqui</button>
 				</div>
 			<div class="card mb-5">
 					<img src="img/pot.png" class="card-img-top img-fluid">
 					<div class="card-body">
-						<h4 class="card-title">Pintor</h4>
-						<h6 class="card-subtitle mb-2 text-muted">Desde pequenas a grandes pinturas</h6>				
+						<h4 class="card-title">Aprenda a montar e editar as suas fotos do seu gosto</h4>
+						<h6 class="card-subtitle mb-2 text-muted">Do basico ao avançado se surpreenda </h6>				
 					</div>
 					<button class="button_busca card-footer" type="button" onclick="location.href='servicos.php'">Entre Aqui</button>
 				</div>
@@ -103,32 +103,32 @@ if($sair==1){//se sair for igual a 1 destroi a sessao apagando os dados da mesma
 			<div class="card mb-5">
 					<img src="img/ing.png" class="card-img-top img-fluid">
 					<div class="card-body">
-						<h4 class="card-title">Tudos em musica</h4>
-						<h6 class="card-subtitle mb-2 text-muted">Contrate bandas, musicos, produtor musical, aluguel de equipamentos e mais...</h6>
+						<h4 class="card-title">Linguagem mais procuradas</h4>
+						<h6 class="card-subtitle mb-2 text-muted">Aprenda outras linguas para enriquecer seu curriculum</h6>
 					</div>
 					<button class="button_busca card-footer" type="button" onclick="location.href='servicos.php'">Entre Aqui</button>
 				</div>
 			<div class="card mb-5">
 					<img src="img/dan.png" class="card-img-top img-fluid">
 					<div class="card-body">
-						<h5 class="card-title">Artes</h5>
-						<h6 class="card-subtitle mb-2 text-muted">Desenhos, esculturas, pinturas e muito mais...</h6>
+						<h5 class="card-title">Aulas de dança</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Todos os tipos de dança, aprenda e encontre o seu balanço</h6>
 					</div>
 						<button class="button_busca card-footer" type="button" onclick="location.href='servicos.php'">Entre Aqui</button>
 				</div>
 			<div class="card mb-5">
 					<img src="img/ard.png" class="card-img-top img-fluid">
 					<div class="card-body">
-						<h4 class="card-title">Informatica em Geral</h4>
-						<h6 class="card-subtitle mb-2 text-muted">Consertos, Formatação, assistencia tecnica, trocas de peças e muitos mais...</h6>
+						<h4 class="card-title">Aulas de arduino</h4>
+						<h6 class="card-subtitle mb-2 text-muted">Criar projetos e mais....</h6>
 					</div>
 						<button class="button_busca card-footer" type="button" onclick="location.href='servicos.php'">Entre Aqui</button>
 				</div>
 			<div class="card mb-5">
 					<img src="img/cort.png" class="card-img-top img-fluid">
 					<div class="card-body">
-						<h4 class="card-title">Limpeza e Cozinha</h4>
-						<h6 class="card-subtitle mb-2 text-muted">Faxineiras, cozinheiras, para eventos, festas, aniversarios e mais...</h6>
+						<h4 class="card-title">Aulas de Corte e costura</h4>
+						<h6 class="card-subtitle mb-2 text-muted">tecnicas incriveis e novidades..</h6>
 					</div>
 				<button class="button_busca card-footer" type="button" onclick="location.href='servicos.php'">Entre Aqui</button>
 				</div>

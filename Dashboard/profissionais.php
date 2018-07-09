@@ -186,13 +186,13 @@
 		<a href="index.php">home</a>
 		</li>
 			<li class="breadcrumb-item">
-			Tabela de usuarios
+			Curriculum
 			</li>
 		</ol>
 		<div class="row">
 			<div class="col-12">
-				<h1>Usuarios Cadastrado</h1>
-							<?php include "exibe2.php";?>
+				<h1>Curriculum</h1>
+					<?php include "exibe.php";?>
 			</div>
 		</div>
 		</div>

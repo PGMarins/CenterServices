@@ -87,8 +87,7 @@ if($sair==1){//se sair for igual a 1 destroi a sessao apagando os dados da mesma
 						</div> 
 
             			<div class="col-12 col-lg-3 border text-center border-bottom-0">
-       						<img src="img/pro.jpg" class="img-fluid rounded">
-       						<img src="img/curso.png" class="img-fluid rounded">
+       						<img src="img/rede.png" class="img-fluid rounded">
             			</div>
 
            				<div class="col-12 col-lg-9 mt-5 mb-5"><!--começo dos cards-->
@@ -100,22 +99,24 @@ if($sair==1){//se sair for igual a 1 destroi a sessao apagando os dados da mesma
 										<h6 class="card-subtitle mb-2 text-muted">Tudo sobre CenterServiçes</h6>
 									</div>
 									<div class="card-footer">
-										<button type="button" class="button_busca" data-toggle="modal" data-target="#exampleModalCenter">
+										<button type="button" class="button_busca" data-toggle="modal" data-target="#sobre">
 	  										Entrar aqui
 										</button>
 
 										<!-- Modal -->
-										<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+										<div class="modal fade" id="sobre" tabindex="-1" role="dialog" aria-labelledby="sobre" aria-hidden="true">
 											<div class="modal-dialog modal-dialog-centered" role="document">
 											    <div class="modal-content">
 												    <div class="modal-header">
-													    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+													    <h5 class="modal-title" id="sobre">CenterServiçes</h5>
 													    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												        	<span aria-hidden="true">&times;</span>
 												        </button>
 												    </div>
-												    <div class="modal-body">
-												        ...
+												    <div class="modal-body text-justify">
+												        O CenterServiçes proporciona vários tipos de serviços com vários profissionais.<br/>
+Com a falta de tempo nos dias de hoje o usuário achara serviços com bastante facilidade e praticidade. Na contratação de um profissional freelance o cliente estará ganhando bastante tempo e economizando dinheiro.<br/> Ao contratar um freelance, o cliente não gasta com encargos, como impostos, transporte, plano de saúde, entre outros benefícios. O usuário paga apenas a taxa cobrada pelo serviço, minimizando o custo e garantindo mais economia. Este site foi Criado na Escola tecnica do curso de informatica em Brasópolis-MG pelos Alunos: Paulo gabriel e Ariel januario.
+
 												    </div>
 												    <div class="modal-footer">
 												    	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -148,17 +149,67 @@ if($sair==1){//se sair for igual a 1 destroi a sessao apagando os dados da mesma
 										</button>
 
 										<!-- Modal -->
+										
 										<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 										  <div class="modal-dialog modal-dialog-centered" role="document">
 										    <div class="modal-content">
 										    	<div class="modal-header">
-											        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+											        <h5 class="modal-title" id="exampleModalLongTitle">LOGIN E REDE SOCIAL</h5>
 											        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 											        	<span aria-hidden="true">&times;</span>
 											        </button>
 										    	</div>
 											    <div class="modal-body">
-											        ...
+<div class="jumbotron">
+		<div class="row no-gutters w-100">
+			<div class="col-12">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-12 col-md-4 col-lg-5">
+											<i class='fa fa-fw fa-facebook-square'></i> FACEBOOK<br/>
+											<i class='fa fa-fw fa-instagram'></i> INSTAGRAN<br/>
+											<i class='fa fa-fw fa-youtube'></i> YOUTUBE<br/>
+									<strong>criadores do site<br/></strong>
+									Paulo<br/>
+									ariel<br/>
+									</p>
+							</div>
+							<div class="col-sm-12 col-md-4 col-lg-7">
+								<p>
+											centercervises2018<br/>
+											oficialcenterservices<br/>
+											OFICIALCENTERCERVICES<br/><br/>
+											<i class='fa fa-fw fa-facebook-square'></i>paulo C.Services<br/>
+											<i class='fa fa-fw fa-facebook-square'></i>Ariel C.Services</p>
+							</div>
+							<div class="col-sm-12 col-md-4 col-lg-12 bg-dark text-white">
+								<form method="post" action="logar.php">
+									<div class="form-group mt-3">
+									<h2>Faça Login</h2>
+										<label for="email">Email</label>
+										<input type="email" class="form-control" id="email" name="email" required placeholder="Digite seu email">
+										<p class="font-weight-light text-secondary">@seudominio.com</p>
+									</div>
+									<div class="form-group">
+										<label for="senha">Senha</label>
+										<input type="password" class="form-control" id="senha" required name="senha" placeholder="Digite sua senha">
+									</div>
+									<div class="form-group">
+											<div class="form-check">
+												<label class="form-check-label">
+													<input type="checkbox">
+														Manter conectado.
+												</label>
+											</div>
+									</div>
+									<button class="button_busca btn-block mb-3">ENTRAR</button>
+								</form>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+</div>
 											    </div>
 											    <div class="modal-footer">
 											   		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -170,11 +221,9 @@ if($sair==1){//se sair for igual a 1 destroi a sessao apagando os dados da mesma
 								</div>
 							</div>
            				</div> 
-
 			            <div class="col-12 col-lg-3 border border-bottom-0 border-top-0">
 			            	<img src="img/cep.png" class="img-fluid rounded float">
 			            </div>
-
             			<div class="col-12 col-lg-9">
 							<div class="jumbotron">
 							  	<div class="container">
@@ -186,26 +235,77 @@ if($sair==1){//se sair for igual a 1 destroi a sessao apagando os dados da mesma
 										<li class="nav-item">
 											<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Fotos</a>
 										</li>
-										<li class="nav-item">
-												<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Videos</a>
-										</li>
 									</ul>
 									<div class="tab-content" id="myTabContent">
 										<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 											Comentarios
 										</div>
 										<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-											Fotos
-										</div>
-										<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-											Videos
+												<div class="row no-gutters">
+			<div id="demo" class="carousel slide carousel-fade mt-1 pb-4 bg-warning" data-ride="carousel">
+			 <!-- Indicadores -->
+			    <ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+			    </ul>
+				 <!-- O carrossel -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="img-fluid" src="img/1.jpg" alt="logo" width="1600" height="500">
+					</div>
+					<div class="carousel-item">
+						<img class="img-fluid" src="img/2.jpg" alt="construcao" width="1600" height="500">
+					</div>
+					<div class="carousel-item">
+						<img class="img-fluid" src="img/10.jpg" alt="Cursos" width="1600" height="500"> 
+					</div>
+				</div>
+
+				<!-- Controles esquerdo e direito -->
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+		</div>
+			<div class="row no-gutters mt-3">
+			<div id="demo" class="carousel slide carousel-fade mt-1 pb-4 bg-warning" data-ride="carousel">
+			 <!-- Indicadores -->
+			    <ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+			    </ul>
+				 <!-- O carrossel -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="img-fluid" src="img/5.jpg" alt="logo" width="1600" height="500">
+					</div>
+					<div class="carousel-item">
+						<img class="img-fluid" src="img/6.png" alt="construcao" width="1600" height="500">
+					</div>
+					<div class="carousel-item">
+						<img class="img-fluid" src="img/cursos.png" alt="Cursos" width="1600" height="500">
+					</div>
+				</div>
+
+				<!-- Controles esquerdo e direito -->
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+		</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div> 
-
-
 						<div class="col-12 col-lg-3 border border-bottom-0 border-top-0 mb-5 text-center">
 							<img src="img/info.png" class="img-fluid rounded">
 						</div> 
@@ -231,18 +331,22 @@ if($sair==1){//se sair for igual a 1 destroi a sessao apagando os dados da mesma
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-sm-12 col-md-4">
-								<p>A Empressa que veio para facilidar a vida de toda população.<br/>
-											Vasta Areas de Serviços<br/>
-											Vasta Areas de Cursos<br/>
-											Vasta Areas de Transportes<br/>
-											E muito mais...</p>
+								<strong><p>Redes sociais.<br/></strong>
+											Facebook<br/>
+											Instagran<br/>
+											Youtube<br/>
+									<strong>criadores do site<br/></strong>
+									Paulo<br/>
+									ariel<br/>
+									</p>
 							</div>
 							<div class="col-sm-12 col-md-4">
-								<p>A Empressa que veio para facilidar a vida de toda população.<br/>
-											Vasta Areas de Serviços<br/>
-											Vasta Areas de Cursos<br/>
-											Vasta Areas de Transportes<br/>
-											E muito mais...</p>
+								<p><br/>
+											centercervises2018<br/>
+											oficialcenterservices<br/>
+											OFICIALCENTERCERVICES<br/><br/>
+											paulo C.Services<br/>
+											Ariel C.Services</p>
 							</div>
 							<div class="col-sm-12 col-md-4">
 								<form method="post" action="logar.php">

@@ -17,12 +17,12 @@ if(isset($_SESSION['profissionais'])) header("location: index.php");//caso o usu
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-12 col-md-4 col-lg-6"><br/><br/><br/><br/>
-			<div class="card-header">
-				<p>A Empressa que veio para facilidar a vida de toda população.<br/>
-										Vasta Areas de Serviços<br/>
-										Vasta Areas de Cursos<br/>
-										Vasta Areas de Transportes<br/>
-										E muito mais...</p>
+			<div class="card-header bg-dark text-white"><h1>CenterServices</h1><br/>
+					<strong><h3>Caso queira Trabalhar conosco crie seu curriculum.<br/><br/>
+					Iremos analizar  seu curriculum e entraremos em contato.<br/>
+				A CenterServices è uma empressa responsavel pelos seus serviços prestados, Sendo assim, iremos analizar muito bem seu curriculum pois contratamos profissionais Responsaveis com mão de obra realmente profissional.<br/>
+				Pois garantimos ao cliente o serviço de qualidade e de garantia.
+										</h3></strong>
 			</div> 
 		</div>
 		
@@ -74,7 +74,7 @@ if(isset($_SESSION['profissionais'])) header("location: index.php");//caso o usu
 								<div class="col-md-3">
 										<label for="profissao">Area de Profissao</label>
 									<select  name="profissao" class="form-control text-dark" style="height: 60%;" >
-										<option selected disabled hidden>Selecione</option>
+										<option value=""selected disabled hidden>Selecione</option>
 										<option value="cursos">Cursos</option>
 										<option value="reformas_e_construcao">Reformas e construção</option>
 										<option value="transportes">Transportes</option>
@@ -99,6 +99,14 @@ if(isset($_SESSION['profissionais'])) header("location: index.php");//caso o usu
 									<select class="form-control text-dark" name="estado" style="height: 60%;">
 										<option value="" selected disabled hidden>Selecione</option>
 										<option value="mg">MG</option>
+										<option value="AC">AC</option>
+										<option value="AL">AL</option>
+										<option value="AP">AP</option>
+										<option value="AM">AM</option>
+										<option value="BA">BA</option>
+										<option value="CE">CE</option>
+										<option value="DF">DF</option>
+										<option value="ES">ES</option>
 									</select>
 								</div>
 								<div class="col-md-4">
@@ -124,11 +132,10 @@ if(isset($_SESSION['profissionais'])) header("location: index.php");//caso o usu
 								<div class="col-md-12">
 									<label for="descricao">Descrição</label>
 									<textarea class="form-control" id="descricao" placeholder="Descrição adicionais" required name="descricao"></textarea>
-								</div>
-								
+								</div>		
 							</div>
 						</div>
-						<input type="submit" class="button_login btn-block">Registrar-se</button>
+						<input type="submit" class="button_login btn-block"></button>
 					</form>
 				</div>
 			</div>

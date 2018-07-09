@@ -39,7 +39,7 @@ if($sair==1){//se sair for igual a 1 destroi a sessao apagando os dados da mesma
 				<div class="card mb-5">
 					<img src="img/construcaos.jpeg" class="card-img-top img-fluid">
 					<div class="card-body">
-						<h5 class="card-title">Desde reformas a grandes contrução</h5>
+						<h5 class="card-title">Da reformas a grandes contrução</h5>
 						<h6 class="card-subtitle mb-2 text-muted">Profissionais capacitados perto de você, entre e encontre oque precisa</h6>
 					</div>
 					<button class="button_busca card-footer" type="button" onclick="location.href='servicos.php'">Entre Aqui</button>
@@ -47,7 +47,7 @@ if($sair==1){//se sair for igual a 1 destroi a sessao apagando os dados da mesma
 				<div class="card mb-5">
 					<img src="img/transportes.png" class="card-img-top img-fluid">
 					<div class="card-body">
-						<h4 class="card-title">Transpotes</h4>
+						<h4 class="card-title">Transportes</h4>
 						<h6 class="card-subtitle mb-2 text-muted">Marcar horario com taxi, Moto Taxi, Moto boy, Aluguel de veiculo entre outros...</h6>				
 					</div>
 					<button class="button_busca card-footer" type="button" onclick="location.href='transportes.php'">Entre Aqui</button>
@@ -56,7 +56,7 @@ if($sair==1){//se sair for igual a 1 destroi a sessao apagando os dados da mesma
 					<img src="img/progamacao.png" class="card-img-top img-fluid">
 					<h4 class="card-title">Programadores</h4>
 					<div class="card-body">
-						<h6 class="card-subtitle mb-2 text-muted">PHP, Android,c++, josgos, app, entre outros... </h6>
+						<h6 class="card-subtitle mb-2 text-muted">PHP, Android,c++, jogos, app, entre outros... </h6>
 					</div>
 						<button class="button_busca card-footer" type="button" onclick="location.href='programadores.php'">Entre Aqui</button>
 			</div>

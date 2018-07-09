@@ -21,10 +21,10 @@
     </style>
 </head>
 <body>
+    
 	<!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<title> Sistema de Cadastro Básico </title>
 		<meta charset="UTF-8"/>
 				<link rel="stylesheet" type="text/css" href="css.css"/>
 	</head>
@@ -55,7 +55,7 @@
     ?>
     <table>
         <caption>Pessoas</caption>
-        <tr><td>codigo</td><td>Nome</td><td>Email</td><td>Profissao</td><td>Data de nascimento</td><td>RG</td><td>Cidade</td><td>Estado</td><td>Descrição</td><td>Telefone</td><td>Whatsapp</td><td>Bairro</td><td>Cep</td><td>Endereço</td><td>Nacionalidade</td><td>Editar</td><td>Apagar</td></tr>
+        <tr>codigo</td><td>Nome</td><td>Email</td><td>Editar</td><td>Apagar</td></tr>
         <?php 
             //Estabelece a conexao com o mysql
             $hostname = "localhost";
@@ -68,7 +68,7 @@
                 exit;
             }
             //Carrega os dados
-            $sql = "SELECT * FROM profissionais";
+            $sql = "SELECT * FROM usuarios";
             $consulta = mysqli_query($conexao, $sql);
             if( !$consulta ){
                 echo "Erro ao realizar consulta. Tente outra vez.";
@@ -80,18 +80,6 @@
                 echo "<td>" .$dados['codigo']. "</td>";
                 echo "<td>" .$dados['nome']. "</td>";
                 echo "<td>" .$dados['email']. "</td>";
-                echo "<td>" .$dados['profissao']. "</td>";
-                echo "<td>" .$dados['data_nacimento']. "</td>";
-                echo "<td>" .$dados['rg']. "</td>";
-                echo "<td>" .$dados['cidade']. "</td>";
-                echo "<td>" .$dados['estado']. "</td>";
-                echo "<td>" .$dados['descricao']. "</td>";
-                echo "<td>" .$dados['telefone']. "</td>";
-                echo "<td>" .$dados['whtasapp']. "</td>";
-                echo "<td>" .$dados['bairro']. "</td>";
-                echo "<td>" .$dados['cep']. "</td>";
-                echo "<td>" .$dados['endereco']. "</td>";
-                echo "<td>" .$dados['nacionalidade']. "</td>";
 
 				
                 
@@ -102,18 +90,6 @@
                 echo "<input name='codigo' type='hidden' value='" .$dados['codigo']. "'>";
                 echo "<input name='nome' type='hidden' value='" .$dados['nome']. "'>";
                 echo "<input name='email' type='hidden' value='" .$dados['email']. "'>";
-                echo "<input name='profissao' type='hidden' value='" .$dados['profissao']. "'>";
-                echo "<input name='data_nacimento' type='hidden' value='" .$dados['data_nacimento']. "'>";
-                echo "<input name='rg' type='hidden' value='" .$dados['rg']. "'>";
-                echo "<input name='cidade' type='hidden' value='" .$dados['cidade']. "'>";
-                echo "<input name='estado' type='hidden' value='" .$dados['estado']. "'>";
-                echo "<input name='descricao' type='hidden' value='" .$dados['descricao']. "'>";
-                echo "<input name='telefone' type='hidden' value='" .$dados['telefone']. "'>";
-                echo "<input name='whtasapp' type='hidden' value='" .$dados['whtasapp']. "'>";
-                echo "<input name='bairro' type='hidden' value='" .$dados['bairro']. "'>";
-                echo "<input name='cep' type='hidden' value='" .$dados['cep']. "'>";
-                echo "<input name='endereco' type='hidden' value='" .$dados['endereco']. "'>";
-                echo "<input name='nacionalidade' type='hidden' value='" .$dados['nacionalidade']. "'>";
 		
 		
                 echo "<button>Editar</button>";
