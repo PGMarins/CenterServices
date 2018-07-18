@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head> 	
+	
+		<title>Sistema de cadastro basico</title>
+		
+		<meta charset="utf-8"/>
+		
+		<link rel="stylesheet" type="text/css" href="css.css"/>
+		
+	</head>
+<div class="pgContato">
+   <div class="contato">
+      <div class="formContato">
+       		<form method="post" action="processa.php">
+					Nome<br/>
+			
+					<input type="text" name="nome" class="campo" maxlength="40" required autofocus><br/>
+					
+					Email<br/>
+			
+					<input type="email" name="email" class="campo" maxlength="50" required><br/>
+			
+					Profissão<br/>
+			
+					<input type="text" name="profissao" class="campo" maxlength="40" required><br/>
+					<br/><br/>
+					
+					<input type="submit" value="Salvar" class="btn">
+					
+					<input type="reset" value="Limpar" class="btn">
+			
+				</form>
+      </div>
+   </div>
+</div>
+   </body>
+</html>

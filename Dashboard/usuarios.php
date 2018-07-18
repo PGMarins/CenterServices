@@ -189,7 +189,7 @@
 			Tabela de usuarios
 			</li>
 		</ol>
-		<div class="row">
+		<div class="row usu">
 			<div class="col-12">
 				<h1>Usuarios Cadastrado</h1>
 							<?php include "exibe2.php";?>

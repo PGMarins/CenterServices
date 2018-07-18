@@ -65,7 +65,7 @@ if($sair==1){//se sair for igual a 1 destroi a sessao apagando os dados da mesma
 				</a>
 			</div>
 		</div>
-	
+	<!--menu de serviços-->
 		<div class="row no-gutters">
 			<div class="col-12">
         		<div class="container-fluid">
@@ -288,7 +288,7 @@ Com a falta de tempo nos dias de hoje o usuário achara serviços com bastante f
 						<img class="img-fluid" src="img/6.png" alt="construcao" width="1600" height="500">
 					</div>
 					<div class="carousel-item">
-						<img class="img-fluid" src="img/cursos.png" alt="Cursos" width="1600" height="500">
+						<img class="img-fluid" src="img/97.jpg" alt="Cursos" width="1600" height="500">
 					</div>
 				</div>
 
